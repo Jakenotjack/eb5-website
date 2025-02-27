@@ -1,0 +1,668 @@
+/* EB-5项目页面样式 */
+.eb5-program {
+    padding-top: 80px; /* 为固定导航栏留出空间 */
+}
+
+/* 英雄区域样式 */
+.program-hero {
+    background: linear-gradient(135deg, #1a365d 0%, #2d4e7c 100%);
+    padding: 4rem 0;
+    color: white;
+    text-align: center;
+}
+
+.program-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.program-hero .subtitle {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* 项目概述样式 */
+.program-overview {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.program-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-card i {
+    font-size: 2rem;
+    color: #4299e1;
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+/* 核心要求样式 */
+.core-requirements {
+    padding: 4rem 0;
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.requirement-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.requirement-card h3 {
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4299e1;
+}
+
+.investment-options {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.option {
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 6px;
+}
+
+.option h4 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.amount {
+    font-size: 1.5rem;
+    color: #4299e1;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.requirement-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.requirement-card ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.requirement-card ul li::before {
+    content: "•";
+    color: #4299e1;
+    position: absolute;
+    left: 0;
+}
+
+.requirement-card ul ul {
+    margin-top: 0.75rem;
+    margin-left: 1rem;
+}
+
+/* 签证类别表格样式 */
+.visa-categories {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+.quota-table {
+    margin-top: 2rem;
+    overflow-x: auto;
+}
+
+.quota-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.quota-table th,
+.quota-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.quota-table th {
+    background-color: #1a365d;
+    color: white;
+}
+
+.quota-table tr:hover {
+    background-color: #f7fafc;
+}
+
+/* 主要优势样式 */
+.key-advantages {
+    padding: 4rem 0;
+}
+
+.key-advantages .advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.key-advantages .advantage-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.key-advantages .advantage-card:hover {
+    transform: translateY(-5px);
+}
+
+.key-advantages .advantage-card i {
+    font-size: 2.5rem;
+    color: #4299e1;
+    margin-bottom: 1.5rem;
+}
+
+.key-advantages .advantage-card h3 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.key-advantages .advantage-card p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .program-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .program-hero .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .key-advantages .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 通用样式 */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+p {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+/* 申请流程样式 */
+.application-process {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #4a5568;
+    font-size: 1.1rem;
+}
+
+/* 时间线样式 */
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    height: 100%;
+    width: 2px;
+    background: #4299e1;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 120px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    background: #4299e1;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-content h3 {
+    color: #1a365d;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.timeline-details {
+    color: #4a5568;
+}
+
+.timeline-details h4 {
+    color: #2d3748;
+    margin: 1.5rem 0 1rem;
+}
+
+.timeline-details ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline-details ul li {
+    margin-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.timeline-details ul li::before {
+    content: "•";
+    color: #4299e1;
+    position: absolute;
+    left: 0;
+}
+
+/* 信息框样式 */
+.info-box {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+}
+
+.info-box h4 {
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+/* 投资类型样式 */
+.investment-types {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.investment-type {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.process-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.process-option {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+/* 时间概览表格样式 */
+.timeline-overview {
+    margin-top: 4rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.timeline-overview h3 {
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.timeline-table {
+    overflow-x: auto;
+}
+
+.timeline-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timeline-table th,
+.timeline-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.timeline-table th {
+    background-color: #1a365d;
+    color: white;
+}
+
+.timeline-table tr:hover {
+    background-color: #f7fafc;
+}
+
+.timeline-table .total-time {
+    font-weight: bold;
+    background-color: #f8fafc;
+}
+
+.timeline-table .total-time td {
+    border-top: 2px solid #4299e1;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        padding-left: 80px;
+    }
+    
+    .timeline-marker {
+        left: 10px;
+    }
+    
+    .investment-types,
+    .process-options {
+        grid-template-columns: 1fr;
+    }
+    
+    .timeline-table {
+        font-size: 0.9rem;
+    }
+}
+
+/* FAQ页面样式 */
+.faq-hero {
+    background: linear-gradient(135deg, #1a365d 0%, #2d4e8c 100%);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.faq-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq-hero .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* FAQ内容区域 */
+.faq-content {
+    padding: 4rem 0;
+    background-color: #f8fafc;
+}
+
+/* FAQ类别按钮 */
+.faq-categories {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #1a365d;
+    border-radius: 30px;
+    background: transparent;
+    color: #1a365d;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: #1a365d;
+    color: white;
+}
+
+.category-btn.active {
+    background: #1a365d;
+    color: white;
+}
+
+/* FAQ部分 */
+.faq-section {
+    display: none;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.faq-section h2 {
+    color: #1a365d;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* FAQ项目 */
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f8fafc;
+}
+
+.faq-question h3 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 1.1rem;
+    flex: 1;
+}
+
+.faq-question i {
+    color: #4299e1;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-question i.fa-chevron-up {
+    transform: rotate(180deg);
+}
+
+/* FAQ答案 */
+.faq-answer {
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    color: #4a5568;
+}
+
+.faq-answer p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.faq-answer ul, 
+.faq-answer ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.faq-answer li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+/* 信息框 */
+.info-box {
+    background: #ebf8ff;
+    border-left: 4px solid #4299e1;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.info-box h4 {
+    color: #2b6cb0;
+    margin-bottom: 0.75rem;
+}
+
+.info-box p {
+    margin-bottom: 0.75rem;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .faq-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .faq-hero .subtitle {
+        font-size: 1rem;
+    }
+    
+    .faq-categories {
+        flex-direction: column;
+        padding: 0 1rem;
+    }
+    
+    .category-btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .faq-question h3 {
+        font-size: 1rem;
+    }
+    
+    .faq-answer {
+        font-size: 0.95rem;
+    }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.faq-section {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* 打印样式 */
+@media print {
+    .faq-categories {
+        display: none;
+    }
+    
+    .faq-section {
+        display: block !important;
+        break-inside: avoid;
+    }
+    
+    .faq-answer {
+        max-height: none !important;
+    }
+    
+    .faq-question i {
+        display: none;
+    }
+} 
