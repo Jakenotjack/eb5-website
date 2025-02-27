@@ -9,6 +9,35 @@ document.addEventListener('DOMContentLoaded', function() {
         // 这里可以添加切换语言的逻辑
     });
 
+    // 数字计数动画
+    const counters = document.querySelectorAll('.counter');
+    const speed = 200; // 动画速度
+
+    const startCounting = (counter) => {
+        const target = +counter.innerText;
+        const count = +counter.innerText;
+        const increment = target / speed;
+
+        if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            setTimeout(() => startCounting(counter), 1);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    // 监听滚动事件，当统计数字进入视图时开始动画
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounting(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    });
+
+    counters.forEach(counter => observer.observe(counter));
+
     // 滚动时导航栏效果
     let lastScroll = 0;
     const nav = document.querySelector('.main-nav');
